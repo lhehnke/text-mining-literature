@@ -18,12 +18,15 @@ library(pacman)
 p_load(dplyr, ggplot2, magrittr, pdftools, reshape2, stringr, tidytext, wordcloud)
 
 
-#--------------#
-# Download pdf #
-#--------------#
+#-------------#
+# Import data #
+#-------------#
 
+# Download pdf
 download.file("https://theroomscriptblog.files.wordpress.com/2016/04/the-room-original-script-by-tommy-wiseau.pdf",
               "the-room-original-script-by-tommy-wiseau.pdf")
+
+# Extract text from pdf file
 room <- pdf_text("the-room-original-script-by-tommy-wiseau.pdf")
 
 
