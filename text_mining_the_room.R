@@ -109,7 +109,7 @@ room_nrc <- room_df %>%
   inner_join(nrc) %>%
   count(word, sort = TRUE)
 
-# Calculate and plot total sentiment scores
+# Calculate total sentiment scores
 nrc_counts <- data.frame(table(nrc$sentiment))
 
 # Plot sentiment scores
