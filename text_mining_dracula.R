@@ -15,7 +15,7 @@ if (!require("pacman")) install.packages("pacman")
 library(pacman)
 
 # Load packages
-p_load(dplyr, ggplot2, gutenbergr, magrittr, stringr, reshape2, tidyr, tidytext, wordcloud)
+p_load(dplyr, ggplot2, gutenbergr, magrittr, reshape2, stringr, tidyr, tidytext, wordcloud)
 
 
 #---------------#
