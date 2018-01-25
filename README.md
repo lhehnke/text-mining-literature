@@ -17,6 +17,8 @@ using the example of Bram Stoker's Dracula.
 
 # Description: text_mining_the_room
 
+Blog post using the data: https://lhehnke.github.io/notes/2018/01/25/text_mining_the_room 
+
 The script covers
 
 * downloading, importing and processing PDF files in R
