@@ -103,20 +103,15 @@ room_df %>%
 # Sentiment analysis #
 #--------------------#
 
-# Get sentiments (nrc) and join
-nrc <- get_sentiments("nrc") 
-room_nrc <- room_df %>%
-  inner_join(nrc) %>%
-  count(word, sort = TRUE)
-
-# Calculate total sentiment scores
-nrc_counts <- data.frame(table(nrc$sentiment))
-
-# Plot sentiment scores
-ggplot(data = nrc_counts, aes(x = Var1, y = Freq)) +
-  geom_bar(aes(fill = Var1), stat = "identity") +
-  xlab("Sentiment") + ylab("Count") + ggtitle("Total sentiment scores in The Room", subtitle = "Written by Tommy Wiseau") +
-  ylim(0, 4000) + theme(legend.position = "none") 
+# Plot total sentiment scores (nrc)
+room_df %>%
+  inner_join(get_sentiments("nrc")) %>%
+  count(word, sentiment) %>%
+  ggplot(aes(sentiment, n)) +
+  geom_bar(aes(fill = sentiment), stat = "identity") +
+  theme(text = element_text(size = 30), axis.text.x = element_text(angle = 65, vjust = 0.5)) +
+  xlab("") + ylab("") + ggtitle("Total sentiment scores in The Room", subtitle = "Written by Tommy Wiseau") +
+  ylim(0, 500) + theme(legend.position = "none") 
 
 
 #-------------------------#
