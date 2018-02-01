@@ -1,8 +1,8 @@
-## text-mining-literature
+# text-mining-literature
 
 Scripts for processing and mining (classical) literature and PDF files
 
-# Description: text_mining_dracula
+## Description: text_mining_dracula
 
 The script covers
 
@@ -15,7 +15,7 @@ The script covers
 
 using the example of Bram Stoker's Dracula.
 
-# Description: text_mining_the_room
+## Description: text_mining_the_room
 
 Corresponding blog post: https://lhehnke.github.io/notes/2018/01/25/text_mining_the_room 
 
