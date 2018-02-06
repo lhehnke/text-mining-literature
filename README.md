@@ -33,3 +33,7 @@ using the script of The Room a.k.a. the worst film ever made (directed, produced
 
 Source: https://theroomscriptblog.files.wordpress.com/2016/04/the-room-original-script-by-tommy-wiseau.pdf
 
+Example plot:
+
+<p align="center"><img src="https://raw.githubusercontent.com/lhehnke/lhehnke.github.io/master/img/text-mining-room/plot3.png" width="600px" height="400x" vspace="40px"/></p>
+
