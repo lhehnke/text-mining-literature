@@ -1,6 +1,6 @@
 # text-mining-literature
 
-Scripts for processing and mining (classical) literature and PDF files
+Scripts for processing and mining (classic) literature and PDF files
 
 ## Description: text_mining_dracula
 
